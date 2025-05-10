@@ -1,0 +1,148 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: white;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+    color: #ff4b2b;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    color: #00d4ff;
+}
+
+p.profile {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: #aaa;
+}
+
+.resume-btn, .work-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover, .work-btn:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+/* Image Styling */
+.image-container img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+:root {
+    --primary-color: #ff4b2b;  /* Default Theme */
+    --background-color: #ff9a7b; /* Default 5 shades lighter */
+    --text-color: #ff4b2b;
+}
+
+/* Apply theme colors */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Use primary color where needed */
+h1, h2, h3, p, a {
+    color: var(--text-color);
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #000000 !important; /* Black background */
+    color: var(--text-color) !important;
+}
+
+/* Theme Switcher Buttons */
+.theme-switcher {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.theme-option {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}

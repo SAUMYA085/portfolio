@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: white;
+    color: #222;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+    color: #ff4b2b;
+}
+
+/* Contact Section */
+#contact {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+/* Contact Form */
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #ff6b4b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #contact {
+        padding: 20px;
+    }
+}

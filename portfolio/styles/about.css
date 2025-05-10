@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: white;
+    color: #222;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+    color: #ff4b2b;
+}
+
+/* About Section */
+#about {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Skills & Certifications */
+.skills, .certifications, .education {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.skills h2, .certifications h2, .education h2 {
+    color: #ff4b2b;
+    font-size: 22px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #about {
+        padding: 20px;
+    }
+}
